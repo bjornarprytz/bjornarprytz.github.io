@@ -1,9 +1,9 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+title: The twenty percent
+description: "Searching for the wheel, so as not to reinvent it"
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: "Bjørnar Prytz"
+  email: "bjornarprytz@gmail.com"
+  url: "https://bjornarprytz.github.io/"
 
 baseurl: /
 
