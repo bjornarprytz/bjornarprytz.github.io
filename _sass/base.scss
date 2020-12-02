@@ -7,14 +7,14 @@
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
-$header: $conifer !default;
+$header: $medium-aquamarine !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../assets/bkg.png") 0 0;
+  background: $teal; //$body-background url("../assets/bkg.png") 0 0;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -50,8 +50,8 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px dashed $conifer; //header;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px dashed $cod-grey; //header;
   padding: 20px;
   margin: 0 0 40px 0;
 }
@@ -65,16 +65,12 @@ header {
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.5;
   margin: 0;
   text-align: center;
-  font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  color: $thistle;//$header;
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -82,7 +78,6 @@ header h1 {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
 }
 
 /* Main Content
@@ -141,7 +136,8 @@ dt {
 }
 
 ul li {
-  list-style-image:url('../assets/bullet.png');
+  list-style: none;
+  //list-style-image:url('../assets/bullet.png');
 }
 
 blockquote {
@@ -235,8 +231,8 @@ hr {
 */
 
 a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: $medium-aquamarine;
+  text-shadow: 0 0 1px $raw-sienna;
 }
 
 a:active, a:focus {
