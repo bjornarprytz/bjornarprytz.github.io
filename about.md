@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![image]({{ site.author.img }}){: #roundedCorners}
+![image]({{ site.author.picture }}){: #roundedCorners}
 
 ## The Twenty Percent
 

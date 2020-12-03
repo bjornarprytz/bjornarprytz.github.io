@@ -1,3 +1,7 @@
+---
+tags: jekyll github-pages golden-path
+---
+
 ### First things first
 Goal: set up a blog where I can document my process
 

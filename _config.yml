@@ -4,7 +4,9 @@ author:
   name: "Bjørnar Prytz"
   email: "bjornarprytz@gmail.com"
   url: "https://bjornarprytz.github.io/"
-  img: "assets/img/author.png"
+  picture: "assets/img/author.png"
+  github: bjornarprytz
+
 
 baseurl: /
 
