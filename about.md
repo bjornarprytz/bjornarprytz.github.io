@@ -3,6 +3,8 @@ layout: page
 title: About
 ---
 
+![image]({{ site.author.img }}){: #roundedCorners}
+
 ## The Twenty Percent
 
 I have dedicated twenty percent of my work to personal projects.

@@ -4,6 +4,7 @@ author:
   name: "Bjørnar Prytz"
   email: "bjornarprytz@gmail.com"
   url: "https://bjornarprytz.github.io/"
+  img: "assets/img/author.png"
 
 baseurl: /
 
@@ -14,8 +15,7 @@ paginate: 3
 paginate_path: /page/:num/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
