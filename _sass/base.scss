@@ -242,13 +242,6 @@ time {
 a {
   color: $medium-aquamarine;
   background-color: $dove-grey;
-  text-shadow: 0 0 1px $raw-sienna;
-}
-
-a:active, a:focus {
-  outline: 0;
-  border: none;
-  -moz-outline-style: none
 }
 
 /* Clearfix */
