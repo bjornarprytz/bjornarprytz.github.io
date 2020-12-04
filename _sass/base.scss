@@ -14,7 +14,7 @@ $blockquote-border: $dove-grey !default;
 body {
   margin: 0;
   padding: 0;
-  background: $teal; //$body-background url("../assets/bkg.png") 0 0;
+  background: $teal;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -78,6 +78,10 @@ header h1 {
 header h2 {
   font-size: 18px;
   font-weight: 300;
+}
+
+h2 { 
+  background-color: $dove-grey; 
 }
 
 /* Main Content
@@ -232,6 +236,7 @@ hr {
 
 a {
   color: $medium-aquamarine;
+  background-color: $dove-grey;
   text-shadow: 0 0 1px $raw-sienna;
 }
 
