@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![image]({{ site.author.picture }}){: #roundedCorners}
+[![image]({{ site.author.picture }}){: #roundedCorners}](https://github.com/bjornarprytz)
 
 ## The Twenty Percent
 
