@@ -3,7 +3,7 @@ layout: page
 title: Goals
 ---
 
-# Breadcrumbs
+## Breadcrumbs
 
 - REST
     - [OpenAPI / Swagger](https://swagger.io/specification/)
