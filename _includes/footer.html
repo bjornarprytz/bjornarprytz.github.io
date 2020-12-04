@@ -7,6 +7,7 @@
     <span>© {{ currentyear }}</span>
   </a>
   <div>
+    <a href="{{ "/archive" | prepend: site.baseurl | replace: '//', '/' }}"><span class="header-link">Archive</span></a>
     <a href="{{ "/atom.xml" | prepend: site.baseurl | replace: '//', '/' }}"><span class="header-link">RSS</span></a>
   </div>
 </footer>

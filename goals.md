@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Goals
 ---
 
 [![image]({{ site.author.picture }}){: #roundedCorners}](https://github.com/bjornarprytz)
