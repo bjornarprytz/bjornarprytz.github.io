@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<ul>
+<ul class="flatlist">
     {% for post in paginator.posts %}
       <li>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>

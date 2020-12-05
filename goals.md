@@ -3,7 +3,7 @@ layout: page
 title: Goals
 ---
 
-[![image]({{ site.author.picture }}){: #roundedCorners}](https://github.com/bjornarprytz)
+[![image]({{ site.author.picture }}){: .roundedCorners}](https://github.com/bjornarprytz)
 
 ## The Twenty Percent
 
