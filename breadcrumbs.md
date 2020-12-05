@@ -20,6 +20,7 @@ title: Breadcrumbs
     - [Game Jam](http://orteil.dashnet.org/gamegen)
     - Blog mini game
     - [Archetype](https://github.com/bjornarprytz/Archetype)
+    - Card importer (generate playable cards from text)
 
 - Desktop App Development
     - [Electron](https://www.electronjs.org/)
@@ -42,6 +43,9 @@ title: Breadcrumbs
     - Kubernetes
     - Docker
     - Prometheus
+
+- Open Source
+    - [Cube cobra](https://cubecobra.com/)
 
 - Jekyll Blog
     - [SEO Tags](https://blog.webjeda.com/optimize-jekyll-seo/)
