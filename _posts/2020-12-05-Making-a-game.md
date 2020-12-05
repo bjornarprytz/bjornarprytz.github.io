@@ -12,12 +12,15 @@ What I need to achieve this:
 
 ### Getting an idea
 
-It would be good to start with something **turn-based**.
-The game logic and state should be **discrete**, and not reliant on the engine itself.
-
-I like [card](https://magic.wizards.com/) [games](https://store.steampowered.com/app/646570/Slay_the_Spire/) a lot, and [deck building](https://boardgamegeek.com/boardgame/36218/dominion) is one of my favourite mechanics because it lends so much agency to the player.
+[Card](https://magic.wizards.com/) [games](https://store.steampowered.com/app/646570/Slay_the_Spire/) inherently pit luck and strategy in a beautiful way. [Deck building](https://boardgamegeek.com/boardgame/36218/dominion) is one of my favourite mechanics because it lets the player compose their own strategy. Combined with deck manipulation and card drawing, they also get fantastic tactical agency.
 
 In [tower](https://store.steampowered.com/app/93200/Revenge_of_the_Titans/) [defense](https://store.steampowered.com/app/246420/Kingdom_Rush___Tower_Defense/) games, there are interesting examples of resource management and puzzle-like level design.
+
+I think a roguelite tower defense would be cool combination:
+- Get unique towers and modifications as reward
+- Modify towers as you progress
+- Resource gathering from sources on the map (which must be defended)
+
 
 ### Choosing an engine
 
