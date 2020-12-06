@@ -20,6 +20,7 @@ title: Breadcrumbs
     - [Game Jam](http://orteil.dashnet.org/gamegen)
     - Blog mini game
     - [Archetype](https://github.com/bjornarprytz/Archetype)
+    - [Card Game Framework](https://github.com/db0/godot-card-gaming) !!
     - Card importer (generate playable cards from text)
 
 - Desktop App Development
