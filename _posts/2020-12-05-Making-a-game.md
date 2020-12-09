@@ -8,7 +8,7 @@ The main goal is to learn how to finish a game. Any game.
 
 What I need to achieve this:
 1. A game idea
-1. An engine ([Unity](https://unity.com/) | [Godot](https://docs.godotengine.org/en/stable/))
+1. An engine ([Unity](https://unity.com/), [Godot](https://docs.godotengine.org/en/stable/))
 
 ### Getting an idea
 
