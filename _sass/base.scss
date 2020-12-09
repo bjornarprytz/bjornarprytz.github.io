@@ -7,7 +7,7 @@
 
 $body-background: $dimir !default;
 $body-foreground: $thistle !default;
-$header: $medium-aquamarine !default;
+$header: $thistle !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 
@@ -70,7 +70,7 @@ header h1 {
   margin: 0;
   text-align: center;
   font-family: Hack, Monaco, monospace;
-  color: $thistle;//$header;
+  color: $header;
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -78,6 +78,7 @@ header h1 {
 header h2 {
   font-size: 18px;
   font-weight: 300;
+  color: $header;
 }
 
 h2 { 
@@ -244,7 +245,7 @@ time {
 */
 
 a {
-  color: $medium-aquamarine;
+  color: $rajah;
   background-color: $blue-grey;
 }
 
