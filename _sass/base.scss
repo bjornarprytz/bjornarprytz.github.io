@@ -5,8 +5,8 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
+$body-background: $dimir !default;
+$body-foreground: $thistle !default;
 $header: $medium-aquamarine !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
@@ -14,7 +14,7 @@ $blockquote-border: $dove-grey !default;
 body {
   margin: 0;
   padding: 0;
-  background: $teal;
+  background: $body-background;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -81,7 +81,7 @@ header h2 {
 }
 
 h2 { 
-  background-color: $dove-grey; 
+  background-color: $blue-grey; 
 }
 
 /* Main Content
