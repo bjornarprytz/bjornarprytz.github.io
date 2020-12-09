@@ -22,6 +22,7 @@ title: Breadcrumbs
     - [Archetype](https://github.com/bjornarprytz/Archetype)
     - [Card Game Framework](https://github.com/db0/godot-card-gaming) !!
     - Card importer (generate playable cards from text)
+    - [Open art](https://opengameart.org/)
 
 - Desktop App Development
     - [Electron](https://www.electronjs.org/)
