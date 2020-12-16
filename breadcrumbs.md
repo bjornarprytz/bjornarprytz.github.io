@@ -37,7 +37,10 @@ title: Breadcrumbs
         - SuperCollider
         - [Frequency Domain](https://www.google.com/search?client=firefox-b-d&q=frequency+domain)
     - Visual
-        - [GenerativePy](http://www.generativepy.com/)
+        - [GenerativePy](http://www.generativepy.com/)  
+
+- Language
+    - Poem generator with [Twitter API](https://developer.twitter.com/en/docs)
 
 - [Chip-8 simulator](https://www.freecodecamp.org/news/creating-your-very-own-chip-8-emulator/)
 
