@@ -34,6 +34,7 @@ title: Breadcrumbs
 - Mobile Development
   - [maui](https://github.com/dotnet/maui)
   - [Plapp](https://github.com/bjornarprytz/Plapp)
+  - [Xamarin++ Recipes by Armir Vuk](https://github.com/almirvuk?tab=repositories)
 
 - Creative Coding
   - [Audio](https://www.youtube.com/watch?v=ROlkhVs15AM)
