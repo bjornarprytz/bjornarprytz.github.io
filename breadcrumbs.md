@@ -30,6 +30,7 @@ title: Breadcrumbs
 - Desktop App Development
   - [Electron](https://www.electronjs.org/)
   - [Flutter](https://flutter.dev/)
+  - [Application URI Scheme](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)?redirectedfrom=MSDN)
 
 - Mobile Development
   - [maui](https://github.com/dotnet/maui)
