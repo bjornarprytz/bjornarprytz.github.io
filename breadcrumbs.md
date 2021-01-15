@@ -44,6 +44,8 @@ title: Breadcrumbs
   - Visual
     - [GenerativePy](http://www.generativepy.com/)  
 
+- [Auth0](https://auth0.com/docs/get-started)
+
 - Language
   - Poem generator with [Twitter API](https://developer.twitter.com/en/docs)
 
