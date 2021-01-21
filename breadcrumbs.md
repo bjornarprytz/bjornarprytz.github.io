@@ -14,6 +14,9 @@ title: Breadcrumbs
   - [HotChocolate](https://github.com/ChilliCream/hotchocolate)
   - [GraphiQL](https://github.com/graphql/graphiql)
 
+- [NodeJS](https://nodejs.org/en/)
+  - [Discord Bot](https://discord.js.org/#/)
+
 - Game Development
   - Write a story bible
   - [Game Jam](http://orteil.dashnet.org/gamegen)
