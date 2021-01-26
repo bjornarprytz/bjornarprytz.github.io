@@ -68,3 +68,9 @@ title: Breadcrumbs
 - Jekyll Blog
   - [SEO Tags](https://blog.webjeda.com/optimize-jekyll-seo/)
   - Add dynamic content
+
+- Patterns
+  - [Gang of Four](https://github.com/wesdoyle/design-patterns-explained-with-food)
+
+- Security
+  - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
