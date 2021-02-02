@@ -9,7 +9,7 @@ title: Breadcrumbs
   - [OpenAPI / Swagger](https://swagger.io/specification/)
   - [Postman](https://www.postman.com/) 
   - [Httprepl](https://github.com/dotnet/HttpRepl)
-  - [HATEOS](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#use-hateoas-to-enable-navigation-to-related-resources)
+  - [HATEOS](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#introduction-to-rest)
 
 - [GraphQL](https://graphql.org/)
   - [HotChocolate](https://github.com/ChilliCream/hotchocolate)
