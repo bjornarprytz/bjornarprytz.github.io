@@ -12,6 +12,7 @@ title: Breadcrumbs
   - [HATEOS](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#introduction-to-rest)
 
 - [GraphQL](https://graphql.org/)
+  - [Related C# Tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/generate-consume-asynchronous-stream)
   - [HotChocolate](https://github.com/ChilliCream/hotchocolate)
   - [GraphiQL](https://github.com/graphql/graphiql)
 
