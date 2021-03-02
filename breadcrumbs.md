@@ -6,6 +6,7 @@ title: Breadcrumbs
 ## Breadcrumbs
 
 - REST
+  - [Tutorial](https://www.restapitutorial.com/)
   - [OpenAPI / Swagger](https://swagger.io/specification/)
   - [Postman](https://www.postman.com/) 
   - [Httprepl](https://github.com/dotnet/HttpRepl)
@@ -18,6 +19,12 @@ title: Breadcrumbs
 
 - [NodeJS](https://nodejs.org/en/)
   - [Discord Bot](https://discord.js.org/#/)
+
+- ChatBot
+  - [Abbot](https://ab.bot/)
+
+- IoT
+  - [Hydroponics](https://create.arduino.cc/projecthub/bltrobotics/vertical-hydroponic-farm-44fef9?ref=tag&ref_id=hydroponics&offset=0)
 
 - Game Development
   - Write a story bible
@@ -74,6 +81,10 @@ title: Breadcrumbs
 
 - Patterns
   - [Gang of Four](https://github.com/wesdoyle/design-patterns-explained-with-food)
+
+- C\#
+  - [async/await best bractices](https://channel9.msdn.com/Shows/On-NET/Brandon-Minnick-asyncawait-best-practices)
+  - [Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events)
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
