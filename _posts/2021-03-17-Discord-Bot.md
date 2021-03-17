@@ -14,3 +14,9 @@ Ideally:
 - I can host the bot on a local machine.
 
 I'm going to start [here](https://discord.js.org/#/).
+
+The [Getting Started guide](https://discordjs.guide/) is fantastic. It has taken me through
+
+1. Making an [Application](https://discord.com/developers/applications) on discord
+2. Setting up the repository for the bot, with some good recommendations on Node.js
+3. Authorizing the bot with the Discord server.
