@@ -8,7 +8,7 @@ title: Breadcrumbs
 - REST
   - [Tutorial](https://www.restapitutorial.com/)
   - [OpenAPI / Swagger](https://swagger.io/specification/)
-  - [Postman](https://www.postman.com/) 
+  - [Postman](https://www.postman.com/)
   - [Httprepl](https://github.com/dotnet/HttpRepl)
   - [HATEOS](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#introduction-to-rest)
 
@@ -18,6 +18,7 @@ title: Breadcrumbs
   - [GraphiQL](https://github.com/graphql/graphiql)
 
 - [NodeJS](https://nodejs.org/en/)
+  - [Node School](https://nodeschool.io/)
   - [Discord Bot](https://discord.js.org/#/)
 
 - ChatBot

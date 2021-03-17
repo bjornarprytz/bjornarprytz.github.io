@@ -12,3 +12,5 @@ Ideally:
 - The Bot can show graphs on a discord channel, following user prompts
   - Can [Grafana](https://www.google.com/search?client=firefox-b-d&q=grafana+board) be used here?
 - I can host the bot on a local machine.
+
+I'm going to start [here](https://discord.js.org/#/).
