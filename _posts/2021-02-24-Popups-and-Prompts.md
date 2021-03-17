@@ -7,7 +7,7 @@ tags: xamarin, C#, prompt, popup, mobile-development
 I want to add a way for a view model to await a user prompt. Something like:
 
 ´´´csharp
-var tag = await PromptService.Prompt<ITagViewModel>();
+var tag = await PromptService.Prompt\<ITagViewModel\>();
 ´´´
 
 I've got [some](https://github.com/HoussemDellai/Xamarin-Forms-Popup-Demo) [avenues](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/pop-ups) to approach this challenge:
