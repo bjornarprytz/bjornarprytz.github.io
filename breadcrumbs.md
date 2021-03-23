@@ -90,3 +90,6 @@ title: Breadcrumbs
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
+
+- Tools
+  - [Pixel Art](https://github.com/mitchcurtis/slate)
