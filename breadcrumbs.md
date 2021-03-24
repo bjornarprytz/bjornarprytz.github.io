@@ -11,6 +11,7 @@ title: Breadcrumbs
   - [Postman](https://www.postman.com/)
   - [Httprepl](https://github.com/dotnet/HttpRepl)
   - [HATEOS](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#introduction-to-rest)
+  - [Django](https://www.django-rest-framework.org/)
 
 - [GraphQL](https://graphql.org/)
   - [Related C# Tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/generate-consume-asynchronous-stream)
@@ -20,6 +21,9 @@ title: Breadcrumbs
 - [NodeJS](https://nodejs.org/en/)
   - [Node School](https://nodeschool.io/)
   - [Discord Bot](https://discord.js.org/#/)
+
+- Localization
+  - [gettext](https://en.wikipedia.org/wiki/Gettext)
 
 - ChatBot
   - [Abbot](https://ab.bot/)
@@ -43,6 +47,7 @@ title: Breadcrumbs
 - Desktop App Development
   - [Electron](https://www.electronjs.org/)
     - [Tutorial](https://github.com/maxogden/elementary-electron)
+    - [Electron.NET](https://github.com/ElectronNET/Electron.NET)
   - [Flutter](https://flutter.dev/)
   - [Application URI Scheme](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85)?redirectedfrom=MSDN)
 
@@ -87,6 +92,7 @@ title: Breadcrumbs
 - C\#
   - [async/await best bractices](https://channel9.msdn.com/Shows/On-NET/Brandon-Minnick-asyncawait-best-practices)
   - [Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events)
+  - [Dotnetos Diagrams](https://goodies.dotnetos.org/)
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
