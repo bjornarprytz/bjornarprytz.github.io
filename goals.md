@@ -12,6 +12,7 @@ This blog is a tool to document my goals and the steps I take towards them.
 Reaching the initial goal is not so important.
 
 ### My over-arching goals are
-1.  Use existing technology wherever possible
-1.  Contribute to open source
-1.  Keep scope managable
+
+1. Use existing technology wherever possible
+2. Contribute to open source
+3. Keep scope managable
