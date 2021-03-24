@@ -6,6 +6,11 @@ tags: arduino, discord-bot
 
 Program an [Arduino WiFi r2](https://store.arduino.cc/arduino-uno-wifi-rev2) to post sensor data to a [discord bot](https://discord.js.org/#/).
 
+Repos
+
+- [Arduino](https://github.com/bjornarprytz/chili-sensor)
+- [DiscordBot](https://github.com/bjornarprytz/sensor-bot)
+
 ## Uploading Code to the Board
 
 The board is outputting a weird warning when I upload a sketch (blink.ino):
@@ -27,8 +32,8 @@ The SerialMonitor doesn't work properly until I explicitly set the baud rate (bi
 
 > vscode\extensions\vsciot-vscode.vscode-arduino-0.4.0\out\src\serialmonitor\serialMonitor.js
 
-After some testing, it seems there's a bug, which causes the Serial Monitor to mangle output from the Arduino until I use the `changeBaudRate()` function (through the Arduino extension). After that, the serial monitor works as desired.
+After some testing, it seems there's a bug, which causes the Serial Monitor to mangle output from the Arduino until I use the [changeBaudRate()](https://github.com/microsoft/vscode-arduino/blob/master/src/serialmonitor/serialMonitor.ts#L177) function. After that, the serial monitor works as desired.
 
 ## Programming the Board
 
-I tried using the included examples in the Arduino extension, but they use the [WiFi.h](https://www.arduino.cc/en/Reference/WiFi) library, did not seem to fit my model. Instead, I'm going to use [WiFiNINA.h](https://www.arduino.cc/en/Reference/WiFiNINA) that's explained here
+I tried using the included examples in the Arduino extension, but they use the [WiFi.h](https://www.arduino.cc/en/Reference/WiFi) library, did not seem to fit my model. Instead, I'm going to use [WiFiNINA.h](https://www.arduino.cc/en/Reference/WiFiNINA). It was very easy adding the library through the Arduino Library Manager.
