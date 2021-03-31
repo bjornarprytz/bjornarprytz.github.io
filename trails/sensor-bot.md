@@ -37,4 +37,10 @@ After some testing, it seems there's a bug, which causes the Serial Monitor to m
 
 ## Programming the Board
 
-I tried using the included examples in the Arduino extension, but they use the [WiFi.h](https://www.arduino.cc/en/Reference/WiFi) library, did not seem to fit my model. Instead, I'm going to use [WiFiNINA.h](https://www.arduino.cc/en/Reference/WiFiNINA). It was very easy adding the library through the Arduino Library Manager.
+I tried using the included examples in the Arduino extension, but they use the [WiFi.h](https://www.arduino.cc/en/Reference/WiFi) library, did not seem to fit my model. Instead, I'm going to use [WiFiNINA.h](https://www.arduino.cc/en/Reference/WiFiNINA). It was very easy adding the library through the [Arduino Library Manager](https://www.arduino.cc/en/guide/libraries).
+
+## Updating Firmware
+
+I updated the WiFiNINA Firmware using [this guide](https://support.arduino.cc/hc/en-us/articles/360013896579-How-to-update-the-WiFi-Nina-and-WiFi101-firmware).
+
+It looks like there's an option to add certificates to the board as well (though I did not do so at this time).
