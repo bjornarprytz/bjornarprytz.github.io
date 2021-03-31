@@ -27,7 +27,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-relative-links
 
 # Custom variables
 owner : "Bjørnar Prytz"
 year : "2020"
+
+relative_links:
+  enabled:     true
+  collections: true

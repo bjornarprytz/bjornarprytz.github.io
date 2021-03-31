@@ -1,4 +1,5 @@
 ---
+layout: post
 tags: arduino, discord-bot
 ---
 
