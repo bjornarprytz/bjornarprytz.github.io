@@ -43,4 +43,6 @@ I tried using the included examples in the Arduino extension, but they use the [
 
 I updated the WiFiNINA Firmware using [this guide](https://support.arduino.cc/hc/en-us/articles/360013896579-How-to-update-the-WiFi-Nina-and-WiFi101-firmware).
 
+> Even after updating to 1.3.0, I'm getting reminders that there's a newer version (1.4.1). [This forum post](https://forum.arduino.cc/index.php?topic=709150.0) states that this will become available with the next Arduino IDE version.
+
 It looks like there's an option to add certificates to the board as well (though I did not do so at this time).
