@@ -14,4 +14,4 @@ add reference in `/trails.md`
 
 example
 
-> [Readable Name](trails/name-of-trail.md)
+> \[Readable Name\]\(trails/name-of-trail.md\)
