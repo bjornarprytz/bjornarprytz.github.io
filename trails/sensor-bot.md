@@ -46,3 +46,7 @@ I updated the WiFiNINA Firmware using [this guide](https://support.arduino.cc/hc
 > Even after updating to 1.3.0, I'm getting reminders that there's a newer version (1.4.1). [This forum post](https://forum.arduino.cc/index.php?topic=709150.0) states that this will become available with the next Arduino IDE version.
 
 It looks like there's an option to add certificates to the board as well (though I did not do so at this time).
+
+## Bot
+
+Back in the discord bot side of things, I'm continuing to follow the [guide](https://discordjs.guide/creating-your-bot/commands-with-user-input.html#mentions), where I left off in [this post](../_posts/2021-03-17-Discord-Bot.md). I'm tackling commands, and JS (it's a blast!).

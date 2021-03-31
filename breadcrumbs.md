@@ -97,5 +97,6 @@ title: Breadcrumbs
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
 
-- Tools
+- Tools / Productivity
   - [Pixel Art](https://github.com/mitchcurtis/slate)
+  - [Syncthing](https://syncthing.net/)
