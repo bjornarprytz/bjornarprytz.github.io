@@ -1,3 +1,4 @@
+This blog is hosted [here](https://bjornarprytz.github.io/)
 
 ## Running Locally
 
