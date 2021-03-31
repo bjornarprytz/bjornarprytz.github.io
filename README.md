@@ -14,4 +14,6 @@ add reference in `/trails.md`
 
 example
 
-> \[Readable Name\]\(trails/name-of-trail.md\)
+```markdown
+[Readable Name](trails/name-of-trail.md)
+```
