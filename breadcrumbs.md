@@ -99,4 +99,4 @@ title: Breadcrumbs
 
 - Tools / Productivity
   - [Pixel Art](https://github.com/mitchcurtis/slate)
-  - [Syncthing](https://syncthing.net/)
+  - [Syncthing](https://syncthing.net/) ([API](https://docs.syncthing.net/dev/rest.html))
