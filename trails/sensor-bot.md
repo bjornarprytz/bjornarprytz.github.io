@@ -64,3 +64,17 @@ for (const item of collection) {
     // item is an object (a, b, c)
 }
 ```
+
+## Todo
+
+- Bot
+  - Join `#operations` channel.
+  - Read from Access database.
+  - Add interesting commands
+    - `!graph <ph|ec|hum|all default:all>` (can I use [grafana](https://grafana.com/) for this?)
+    - `!read <ph|ec|hum|all default:all>`
+  - Add interesting events
+    - alert (on sensor levels)
+- Arduino
+  - Hook up sensors
+  - Post to database
