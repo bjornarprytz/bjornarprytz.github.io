@@ -20,9 +20,16 @@ Create an app which lets the user log data series on different topics. The topic
 
 ## Fixing the database
 
-There's somthing wrong with the way I'm storing records in the database. Somehow data is getting lost / not persisted properly
+There's somthing wrong with the way I'm storing records in the database. Somehow data is getting lost / not persisted properly.
+
+This is the exception that's being thrown every time I'm updating an entity (e.g. Topic):
+
+> The instance of entity type 'Topic' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+
+[This article](https://medium.com/@yostane/data-persistence-in-xamarin-using-entity-framework-core-e3a58bdee9d1) goes through the basics of EF Core with Xamarin. It's made me aware of [migrations](https://medium.com/@yostane/entity-framework-core-and-sqlite-database-migration-using-vs2017-macos-28812c64e7ef), but I'll look into that later.
 
 ## Todo
 
 - Fix the EFCore database persistence
   - Update tracked entities
+- Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
