@@ -71,8 +71,9 @@ for (const item of collection) {
   - Join `#operations` channel.
   - Read from Access database.
   - Add interesting commands
-    - `!graph <ph|ec|hum|all default:all>` (can I use [grafana](https://grafana.com/) for this?)
-    - `!read <ph|ec|hum|all default:all>`
+    - `!graph <ph|ec|hum|all> default:all` (can I use [grafana](https://grafana.com/) for this?)
+    - `!read <ph|ec|hum|all> default:all`
+    - `!configure <event_name> <params>`
   - Add interesting events
     - alert (on sensor levels)
 - Arduino
