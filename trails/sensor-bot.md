@@ -65,7 +65,13 @@ for (const item of collection) {
 }
 ```
 
+It turns out it's not necessary to *join* a channel with the bot. I just had to *add* the bot through my regular Discord client.
+
+### Events
+
 Finished the [event handler guide](https://discordjs.guide/event-handling/#event-handling). Now, adding events is easy as pie!
+
+### Commands
 
 Added some placeholder commands, that I can implement later.
 
@@ -76,8 +82,7 @@ Added some placeholder commands, that I can implement later.
 ## Todo
 
 - Bot
-  - Join `#operations` channel.
-  - Read from Access database.
+  - Read from database.
   - Add interesting commands
     - `!graph <ph|ec|hum|all> default:all` (can I use [grafana](https://grafana.com/) for this?)
     - `!read <ph|ec|hum|all> default:all`
