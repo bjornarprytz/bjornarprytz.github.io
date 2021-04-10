@@ -65,6 +65,14 @@ for (const item of collection) {
 }
 ```
 
+Finished the [event handler guide](https://discordjs.guide/event-handling/#event-handling). Now, adding events is easy as pie!
+
+Added some placeholder commands, that I can implement later.
+
+- `!graph <ph|ec|hum|all> default:all`
+- `!read <ph|ec|hum|all> default:all`
+- `!configure <event_name> <params>`
+
 ## Todo
 
 - Bot
