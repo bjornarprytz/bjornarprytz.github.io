@@ -49,6 +49,8 @@ It looks like there's an option to add certificates to the board as well (though
 
 ## Bot
 
+[Previous post](../_posts/2021-03-17-Discord-Bot.md)
+
 Back in the discord bot side of things, I'm continuing to follow the [guide](https://discordjs.guide/creating-your-bot/commands-with-user-input.html#mentions), where I left off in [this post](../_posts/2021-03-17-Discord-Bot.md). I'm tackling commands, and JS (it's a blast!).
 
 Found out there's a difference between the [in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) and [of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) keyworlds in javascript:

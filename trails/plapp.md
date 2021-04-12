@@ -33,3 +33,8 @@ This is the exception that's being thrown every time I'm updating an entity (e.g
 - Fix the EFCore database persistence
   - Update tracked entities
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
+
+### Ideas
+
+- Add static properties to a data series, and time stamps for when they change
+  - E.g. A plant is standing in a windown along the north wall. Time passes, data is gathered. The plant is moved to a window on the south side. When looking at the time series, it will be observable where the plant was.

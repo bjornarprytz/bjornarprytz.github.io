@@ -46,6 +46,7 @@ title: Breadcrumbs
 
 - Desktop App Development
   - [Electron](https://www.electronjs.org/)
+    - [Electron-Forge CLI](https://www.electronforge.io/)
     - [Tutorial](https://github.com/maxogden/elementary-electron)
     - [Electron.NET](https://github.com/ElectronNET/Electron.NET)
   - [Flutter](https://flutter.dev/)
