@@ -28,11 +28,20 @@ This is the exception that's being thrown every time I'm updating an entity (e.g
 
 [This article](https://medium.com/@yostane/data-persistence-in-xamarin-using-entity-framework-core-e3a58bdee9d1) goes through the basics of EF Core with Xamarin. It's made me aware of [migrations](https://medium.com/@yostane/entity-framework-core-and-sqlite-database-migration-using-vs2017-macos-28812c64e7ef), but I'll look into that later.
 
+### Tests
+
+Wrote a bunch of tests to avoid having to boot the Android Emulator for every little change. It looks like I've also fixed the Entity Update bug I had.
+
+## C\# 9
+
+Upgraded to C\# 9, and made the database entities `records`, which could make the `ToViewModel`/`ToModel` functions refactorable!
+
 ## Todo
 
-- Fix the EFCore database persistence
-  - Update tracked entities
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
+- Write a test for PlappDataStore.DeleteTopicAsync()
+  - Check that every orphaned entity is removed, and that other entities aren't
+
 
 ### Ideas
 
