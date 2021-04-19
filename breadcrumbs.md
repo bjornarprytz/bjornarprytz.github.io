@@ -99,6 +99,7 @@ title: Breadcrumbs
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
+  - [Hacking-CTF](https://picoctf.org/)
 
 - Tools / Productivity
   - [Pixel Art](https://github.com/mitchcurtis/slate)
