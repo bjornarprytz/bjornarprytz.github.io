@@ -14,6 +14,8 @@ title: Breadcrumbs
   - [Django](https://www.django-rest-framework.org/)
 
 - [GraphQL](https://graphql.org/)
+  - [How to](https://www.howtographql.com/)
+  - [Cheat Sheet](https://raw.githubusercontent.com/sogko/graphql-shorthand-notation-cheat-sheet/master/graphql-shorthand-notation-cheat-sheet.png)
   - [Related C# Tutorial](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/generate-consume-asynchronous-stream)
   - [HotChocolate](https://github.com/ChilliCream/hotchocolate)
   - [GraphiQL](https://github.com/graphql/graphiql)

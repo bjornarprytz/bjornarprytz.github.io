@@ -42,7 +42,6 @@ Upgraded to C\# 9, and made the database entities `records`, which could make th
 - Write a test for PlappDataStore.DeleteTopicAsync()
   - Check that every orphaned entity is removed, and that other entities aren't
 
-
 ### Ideas
 
 - Add static properties to a data series, and time stamps for when they change
