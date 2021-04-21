@@ -24,6 +24,8 @@ title: Breadcrumbs
   - [Node School](https://nodeschool.io/)
   - [Discord Bot](https://discord.js.org/#/)
 
+- [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+
 - Localization
   - [gettext](https://en.wikipedia.org/wiki/Gettext)
 

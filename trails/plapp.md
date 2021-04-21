@@ -30,17 +30,23 @@ This is the exception that's being thrown every time I'm updating an entity (e.g
 
 ### Tests
 
-Wrote a bunch of tests to avoid having to boot the Android Emulator for every little change. It looks like I've also fixed the Entity Update bug I had.
+Wrote a bunch of tests to avoid having to boot the Android Emulator for every little change. It looks like I've also fixed the Entity Update bug.
 
-## C\# 9
+### C\# 9
 
 Upgraded to C\# 9, and made the database entities `records`, which could make the `ToViewModel`/`ToModel` functions refactorable!
+
+### Eager Loading
+
+There are [various ways](https://docs.microsoft.com/en-us/ef/core/querying/related-data/) to handle the loading of related entities. I'm using [eager Loading](https://docs.microsoft.com/en-us/ef/core/querying/related-data/eager) in some places (load tags when loading data series). It looks like there are many considerations to take in that article, so if I want to do more advanced stuff with this, I should read up on the caveats.
 
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
 - Write a test for PlappDataStore.DeleteTopicAsync()
   - Check that every orphaned entity is removed, and that other entities aren't
+- Look into refactoring `ToViewModel`/`ToModel` code
+- Fix the LoadingScreen (ILoadingViewModel)
 
 ### Ideas
 
