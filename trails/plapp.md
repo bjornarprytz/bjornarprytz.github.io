@@ -40,13 +40,38 @@ Upgraded to C\# 9, and made the database entities `records`, which could make th
 
 There are [various ways](https://docs.microsoft.com/en-us/ef/core/querying/related-data/) to handle the loading of related entities. I'm using [eager Loading](https://docs.microsoft.com/en-us/ef/core/querying/related-data/eager) in some places (load tags when loading data series). It looks like there are many considerations to take in that article, so if I want to do more advanced stuff with this, I should read up on the caveats.
 
+### Disposing Context and Dependency Injection
+
+This error message pops up when I try to add a DataSeries:
+
+> System.ObjectDisposedException: 'Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'PlappDbContext'.'
+
+The issue was (as the exception states) that I was disposing the context twice. To fix it, I simply removed the `using` statement outside `GetContextAsync()`:
+
+```csharp
+public async Task<IEnumerable<Tag>> FetchTagsAsync(CancellationToken cancellationToken = default)
+{
+    /*using*/ var context = await GetContextAsync(cancellationToken);
+    
+    return await context.Tags
+        .AsNoTracking()
+        .ToListAsync(cancellationToken);
+}
+```
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
-- Write a test for PlappDataStore.DeleteTopicAsync()
-  - Check that every orphaned entity is removed, and that other entities aren't
 - Look into refactoring `ToViewModel`/`ToModel` code
 - Fix the LoadingScreen (ILoadingViewModel)
+- Visualize DataSeries
+  - The topic view should be able to adjust the time span, which will affect all dataseries
+  - Alternatives
+    - [Microcharts](https://github.com/dotnet-ad/Microcharts)
+    - [OxyPlot](https://github.com/oxyplot/oxyplot)
+- Refactor ViewModels so ObservableCollections are updated only when needed
+- When adding new Entities, how can I get its Id when records are immutable?
 
 ### Ideas
 
