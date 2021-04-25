@@ -5,6 +5,24 @@ title: Breadcrumbs
 
 ## Breadcrumbs
 
+- Blogs & News
+  - [dev.to](https://dev.to/)
+  - [Microsoft](https://devblogs.microsoft.com/)
+  - [Hackernoon](https://hackernoon.com/)
+  - [Programmable Web](https://www.programmableweb.com/)
+  - [CodeSimplicity](https://www.codesimplicity.com/)
+  - [Netflix Tech Blog](https://netflixtechblog.com/)
+  - [David Walsh](https://davidwalsh.name/)
+
+- [Awesome](https://github.com/sindresorhus/awesome)
+  - [Free Programming Books](https://github.com/EbookFoundation/free-programming-books)
+  - [Web Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap)
+  - [Build your own X](https://github.com/danistefanovic/build-your-own-x)
+  - [Public APIs](https://github.com/public-apis/public-apis)
+  - [System Design Primer](https://github.com/donnemartin/system-design-primer)
+  - [Design Resources](https://github.com/bradtraversy/design-resources-for-developers)
+  - [Repos](https://github.com/pawelborkar/awesome-repos)
+
 - REST
   - [Tutorial](https://www.restapitutorial.com/)
   - [OpenAPI / Swagger](https://swagger.io/specification/)

@@ -60,16 +60,31 @@ public async Task<IEnumerable<Tag>> FetchTagsAsync(CancellationToken cancellatio
 }
 ```
 
+### Concurrency Issues on the DbContext
+
+When clicking the AddDataSeries Button:
+
+> System.InvalidOperationException: 'A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.'
+
+### Refactored the `record`s back to `class`
+
+I really wanted to use `record`, but this wasn't the use case for it.
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
-- Look into refactoring `ToViewModel`/`ToModel` code
 - Fix the LoadingScreen (ILoadingViewModel)
 - Visualize DataSeries
   - The topic view should be able to adjust the time span, which will affect all dataseries
   - Alternatives
     - [Microcharts](https://github.com/dotnet-ad/Microcharts)
     - [OxyPlot](https://github.com/oxyplot/oxyplot)
+- Add `CreateDataPointsViewModel`
+
+- Look into refactoring `ToViewModel`/`ToModel` code
+- ViewModels should be able to instantiate other ViewModels (in the same name space)
+  - use internal models to hydrate ViewModels as not to expose them through the interface
+  - E.g. ApplicationViewModel should do ((TopicViewModel)iTopicVM).Hydrate(topicData)
 - Refactor ViewModels so ObservableCollections are updated only when needed
 - When adding new Entities, how can I get its Id when records are immutable?
 
