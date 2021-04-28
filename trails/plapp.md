@@ -70,6 +70,24 @@ When clicking the AddDataSeries Button:
 
 I really wanted to use `record`, but this wasn't the use case for it.
 
+## Adding Data Points
+
+Stuff that needs to be done:
+
+- CreateDataPointsViewModel
+  - [x] Keep track of user input
+  - [x] Undo actions
+  - Persist the data
+- Create ViewModel implementations for the various data types
+  - [x] Decimal
+  - Integer
+  - Bool
+  - Check
+- DataPoint Form
+  - [x] UI for data point creation
+  - Depending on data type
+- Make sure the dataseries is updated when the points are added
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
@@ -79,14 +97,14 @@ I really wanted to use `record`, but this wasn't the use case for it.
   - Alternatives
     - [Microcharts](https://github.com/dotnet-ad/Microcharts)
     - [OxyPlot](https://github.com/oxyplot/oxyplot)
-- Add `CreateDataPointsViewModel`
-
+- Add a mechanism where 'new' DataPoints are created in the context of their data series (i.e. with data type + id filled in)
 - Look into refactoring `ToViewModel`/`ToModel` code
 - ViewModels should be able to instantiate other ViewModels (in the same name space)
   - use internal models to hydrate ViewModels as not to expose them through the interface
   - E.g. ApplicationViewModel should do ((TopicViewModel)iTopicVM).Hydrate(topicData)
-- Refactor ViewModels so ObservableCollections are updated only when needed
-- When adding new Entities, how can I get its Id when records are immutable?
+- Investigate if Event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
+
+- Add Localization ([gettext](https://www.gnu.org/software/gettext/) | [localization for xamarin.forms](https://developers.localizejs.com/docs/how-to-use-localize-to-translate-your-xamarin-mobile-application))
 
 ### Ideas
 
