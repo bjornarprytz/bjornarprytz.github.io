@@ -102,7 +102,10 @@ Stuff that needs to be done:
 - ViewModels should be able to instantiate other ViewModels (in the same name space)
   - use internal models to hydrate ViewModels as not to expose them through the interface
   - E.g. ApplicationViewModel should do ((TopicViewModel)iTopicVM).Hydrate(topicData)
-- Investigate if Event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
+- Investigate if Event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/
+- BaseTaskViewModel.cs)) can cause a memory leak.
+- Investigate `DataStore.Save` functions, because they might be able to use some more of EFCore's features, now that data models are reference types (not readonly records).
+- Fix DataSeries not being Saved on `Topic.OnHide()`
 
 - Add Localization ([gettext](https://www.gnu.org/software/gettext/) | [localization for xamarin.forms](https://developers.localizejs.com/docs/how-to-use-localize-to-translate-your-xamarin-mobile-application))
 
