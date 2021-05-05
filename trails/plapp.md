@@ -32,7 +32,7 @@ This is the exception that's being thrown every time I'm updating an entity (e.g
 
 Wrote a bunch of tests to avoid having to boot the Android Emulator for every little change. It looks like I've also fixed the Entity Update bug.
 
-### C\# 9
+### C# 9
 
 Upgraded to C\# 9, and made the database entities `records`, which could make the `ToViewModel`/`ToModel` functions refactorable!
 
@@ -70,6 +70,12 @@ When clicking the AddDataSeries Button:
 
 I really wanted to use `record`, but this wasn't the use case for it.
 
+### Refactoring `Plapp.Persist`
+
+When I started watching this [video series](https://www.youtube.com/watch?v=7pkmqrrjAAQ&list=PLA8ZIAm2I03jSfo18F7Y65XusYzDusYu5&index=2), I realised that I've been making the DataStore complicated. I can really cut down a lot of the boiler plate and use generics for my data access. This is a huge relief, and I can't wait to get it done!
+
+The refactoring is now done, but it seems I'll be retracing some of my steps ("Fixing the database", "Disposing Context and Dependency Injection" above)
+
 ## Adding Data Points
 
 Stuff that needs to be done:
@@ -77,15 +83,15 @@ Stuff that needs to be done:
 - CreateDataPointsViewModel
   - [x] Keep track of user input
   - [x] Undo actions
-  - Persist the data
+  - [ ] Persist the data
 - Create ViewModel implementations for the various data types
   - [x] Decimal
-  - Integer
-  - Bool
-  - Check
+  - [ ] Integer
+  - [ ] Bool
+  - [ ] Check
 - DataPoint Form
   - [x] UI for data point creation
-  - Depending on data type
+  - [ ] Depending on data type
 - Make sure the dataseries is updated when the points are added
 
 ## Todo
@@ -102,12 +108,19 @@ Stuff that needs to be done:
 - ViewModels should be able to instantiate other ViewModels (in the same name space)
   - use internal models to hydrate ViewModels as not to expose them through the interface
   - E.g. ApplicationViewModel should do ((TopicViewModel)iTopicVM).Hydrate(topicData)
-- Investigate if Event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/
-- BaseTaskViewModel.cs)) can cause a memory leak.
-- Investigate `DataStore.Save` functions, because they might be able to use some more of EFCore's features, now that data models are reference types (not readonly records).
+- Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
 - Fix DataSeries not being Saved on `Topic.OnHide()`
+- Sketch UI Layout
 
 - Add Localization ([gettext](https://www.gnu.org/software/gettext/) | [localization for xamarin.forms](https://developers.localizejs.com/docs/how-to-use-localize-to-translate-your-xamarin-mobile-application))
+- Transition to MAUI ([blog post](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/) | [repo](https://www.google.com/search?client=firefox-b-d&q=github+maui))
+  - [MVU](https://thomasbandt.com/model-view-update) | ([example](https://devblogs.microsoft.com/xamarin/fabulous-functional-app-development/)) and [F#](https://fsharp.org/learn/).
+- Replace the `CommandHandler` with [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms)
+- Investigate `DataStore.Save` functions, because they might be able to use some more of EFCore's features, now that data models are reference types (not readonly records).
+  - Use Generic CRUD operations (explained [here](https://www.youtube.com/watch?v=7pkmqrrjAAQ&list=PLA8ZIAm2I03jSfo18F7Y65XusYzDusYu5&index=2))
+- Refactor away the Service Locator anti-pattern (pass services in constructors, not the ServiceProvider). Try to use the Factory Pattern instead (constructor inject the necessary factory).
+- Use `GetRequiredService` instead of `GetService` on the `ServiceProvider`
+- Maybe refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
 
 ### Ideas
 

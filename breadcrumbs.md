@@ -95,12 +95,15 @@ title: Breadcrumbs
 
 - [Chip-8 simulator](https://www.freecodecamp.org/news/creating-your-very-own-chip-8-emulator/)
 
-- [Cloud Native](https://www.cncf.io/phippy/)
-  - Kubernetes
-  - Docker
-  - Prometheus
-
-- [Backstage](https://backstage.io/)
+- DevOps
+  - [Cloud Native](https://www.cncf.io/phippy/)
+    - Kubernetes
+    - Docker
+    - Prometheus
+  - [GitHub Actions](https://github.com/features/actions)
+  - [Dependabot](https://dependabot.com/)
+  - [Backstage](https://backstage.io/)
+  - [Ansible](https://www.jeffgeerling.com/blog/2020/ansible-101-jeff-geerling-youtube-streaming-series)
 
 - Open Source
   - [Cube cobra](https://cubecobra.com/)
@@ -116,6 +119,7 @@ title: Breadcrumbs
   - [async/await best bractices](https://channel9.msdn.com/Shows/On-NET/Brandon-Minnick-asyncawait-best-practices)
   - [Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events)
   - [Dotnetos Diagrams](https://goodies.dotnetos.org/)
+  - [HTTP Client best practices](https://www.youtube.com/watch?v=XIw97Wab3no&list=PLA8ZIAm2I03jSfo18F7Y65XusYzDusYu5&index=30)
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)
