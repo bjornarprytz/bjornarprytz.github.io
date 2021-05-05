@@ -74,7 +74,7 @@ I really wanted to use `record`, but this wasn't the use case for it.
 
 When I started watching this [video series](https://www.youtube.com/watch?v=7pkmqrrjAAQ&list=PLA8ZIAm2I03jSfo18F7Y65XusYzDusYu5&index=2), I realised that I've been making the DataStore complicated. I can really cut down a lot of the boiler plate and use generics for my data access. This is a huge relief, and I can't wait to get it done!
 
-The refactoring is now done, but it seems I'll be retracing some of my steps ("Fixing the database", "Disposing Context and Dependency Injection" above)
+The refactoring is now done, but it seems I'll be retracing some of my steps ("Fixing the database", "Disposing Context and Dependency Injection" above). Could `.AsNoTracking()` be the answer?
 
 ## Adding Data Points
 
