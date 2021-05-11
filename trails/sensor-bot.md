@@ -84,6 +84,8 @@ Added some placeholder commands, that I can implement later.
 ## Todo
 
 - Bot
+  - Upgrage to [slash commands](https://gist.github.com/advaith1/287e69c3347ef5165c0dbde00aa305d2)
+    - Can users type `/` to see available commands?
   - Read from database.
   - Add interesting commands
     - `!graph <ph|ec|hum|all> default:all` (can I use [grafana](https://grafana.com/) for this?)
