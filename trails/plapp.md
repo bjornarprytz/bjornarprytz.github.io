@@ -104,10 +104,7 @@ Stuff that needs to be done:
     - [Microcharts](https://github.com/dotnet-ad/Microcharts)
     - [OxyPlot](https://github.com/oxyplot/oxyplot)
 - Add a mechanism where 'new' DataPoints are created in the context of their data series (i.e. with data type + id filled in)
-- Look into refactoring `ToViewModel`/`ToModel` code
-- ViewModels should be able to instantiate other ViewModels (in the same name space)
-  - use internal models to hydrate ViewModels as not to expose them through the interface
-  - E.g. ApplicationViewModel should do ((TopicViewModel)iTopicVM).Hydrate(topicData)
+
 - Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
 - Fix DataSeries not being Saved on `Topic.OnHide()`
 - Sketch UI Layout
@@ -115,12 +112,18 @@ Stuff that needs to be done:
 - Add Localization ([gettext](https://www.gnu.org/software/gettext/) | [localization for xamarin.forms](https://developers.localizejs.com/docs/how-to-use-localize-to-translate-your-xamarin-mobile-application))
 - Transition to MAUI ([blog post](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/) | [repo](https://www.google.com/search?client=firefox-b-d&q=github+maui))
   - [MVU](https://thomasbandt.com/model-view-update) | ([example](https://devblogs.microsoft.com/xamarin/fabulous-functional-app-development/)) and [F#](https://fsharp.org/learn/).
-- Replace the `CommandHandler` with [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms)
-- Investigate `DataStore.Save` functions, because they might be able to use some more of EFCore's features, now that data models are reference types (not readonly records).
-  - Use Generic CRUD operations (explained [here](https://www.youtube.com/watch?v=7pkmqrrjAAQ&list=PLA8ZIAm2I03jSfo18F7Y65XusYzDusYu5&index=2))
-- Refactor away the Service Locator anti-pattern (pass services in constructors, not the ServiceProvider). Try to use the Factory Pattern instead (constructor inject the necessary factory).
+
+- User confirmation on delete
+  - Topic
+  - DataSeries
+  - DataPoints
+  - Tag (may need extra confirmation because it's latteraly connected)
+
+- Tests for the ViewModels
+  - Prerequisites to complete: Figure out the business logic
+
 - Use `GetRequiredService` instead of `GetService` on the `ServiceProvider`
-- Maybe refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
+- Refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
 
 ### Ideas
 
