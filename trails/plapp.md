@@ -105,25 +105,40 @@ Stuff that needs to be done:
     - [OxyPlot](https://github.com/oxyplot/oxyplot)
 - Add a mechanism where 'new' DataPoints are created in the context of their data series (i.e. with data type + id filled in)
 
-- Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
-- Fix DataSeries not being Saved on `Topic.OnHide()`
 - Sketch UI Layout
 
 - Add Localization ([gettext](https://www.gnu.org/software/gettext/) | [localization for xamarin.forms](https://developers.localizejs.com/docs/how-to-use-localize-to-translate-your-xamarin-mobile-application))
+
 - Transition to MAUI ([blog post](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/) | [repo](https://www.google.com/search?client=firefox-b-d&q=github+maui))
   - [MVU](https://thomasbandt.com/model-view-update) | ([example](https://devblogs.microsoft.com/xamarin/fabulous-functional-app-development/)) and [F#](https://fsharp.org/learn/).
 
-- User confirmation on delete
+- User confirmation on delete (create a ViewModel which can be bound to a button?)
+  - ConfirmActionViewModel ()
   - Topic
   - DataSeries
   - DataPoints
   - Tag (may need extra confirmation because it's latteraly connected)
 
 - Tests for the ViewModels
-  - Prerequisites to complete: Figure out the business logic
+  - Prerequisites: Figure out the business logic
 
 - Use `GetRequiredService` instead of `GetService` on the `ServiceProvider`
+
 - Refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
+
+### Bugs
+
+- When topics are updated, a new copy of it is created instead
+  - Likely cause: `TopicViewModel.Id` is not updated when saved
+- Fix DataSeries not being Saved on `Topic.OnHide()`
+- Some tests are non-deterministic
+  - Likely because they test a function which has `Task.Run(...)` in it and the test does not await.
+- Exception thrown when adding a second tag:
+  - > Microsoft.EntityFrameworkCore.DbUpdateException: 'An error occurred while updating the entries. See the inner exception for details.'
+    - Note: There was no inner exception to be accessed
+  - I may be able to unconver this in the test project
+
+- Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
 
 ### Ideas
 
