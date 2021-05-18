@@ -61,6 +61,7 @@ title: Breadcrumbs
   - [Card Game Framework](https://github.com/db0/godot-card-gaming) !!
   - Card importer (generate playable cards from text)
   - [Open art](https://opengameart.org/)
+  - [Finite State Machines](https://www.gdquest.com/tutorial/godot/design-patterns/finite-state-machine/)
 
 - Godot Engine
   - [Docs](https://docs.godotengine.org/en/stable/)

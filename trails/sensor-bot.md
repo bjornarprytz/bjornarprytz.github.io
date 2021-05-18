@@ -96,4 +96,4 @@ Added some placeholder commands, that I can implement later.
     - alert (on sensor levels)
 - Arduino
   - Hook up sensors
-  - Post to database
+  - [JSON server](https://arduinojson.org/v6/example/http-server/)
