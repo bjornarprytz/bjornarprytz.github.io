@@ -106,6 +106,17 @@ I can't really explain why, but it's neccessary to add `-windows` to the target 
 
 Having gone back and forth with the data mapping functions over the course of this project, I've finally decided to try AutoMapper. Starting [here](https://docs.automapper.org/en/stable/Getting-started.html).
 
+Adding AutoMapper was a huge relivef, and it lead me down an interesting path of discovering additional Nuget packages to try. Added [AutoFixture](https://github.com/AutoFixture/AutoFixture) in order to auto-mock data more easily. It's working fine with the ViewModels since they're using mostly interfaces. Of note: I did struggle with `Delegate` types for a while, but all I was missing was this configuration detail:
+
+```csharp
+new Fixture()
+  .Customize(new AutoMoqCustomization { GenerateDelegates = true });
+```
+
+## Adding animation to the `LoadingPage`
+
+As a training exercise, I thought I'd add some animation on the LoadingPage. It was very easy to follow [this article](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/animation/simple).
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
@@ -116,6 +127,8 @@ Having gone back and forth with the data mapping functions over the course of th
     - [Microcharts](https://github.com/dotnet-ad/Microcharts)
     - [OxyPlot](https://github.com/oxyplot/oxyplot)
 - Add a mechanism where 'new' DataPoints are created in the context of their data series (i.e. with data type + id filled in)
+
+- Create graceful animation handling in `BasePage.OnAppearing` and `OnDisappearing`
 
 - Sketch UI Layout
 
