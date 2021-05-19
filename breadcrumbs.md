@@ -121,6 +121,15 @@ title: Breadcrumbs
   - [Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events)
   - [Dotnetos Diagrams](https://goodies.dotnetos.org/)
   - [HTTP Client best practices](https://www.youtube.com/watch?v=XIw97Wab3no&list=PLA8ZIAm2I03jSfo18F7Y65XusYzDusYu5&index=30)
+  - Nuget Packages to learn
+    - [Polly](https://github.com/App-vNext/Polly)
+    - [Benchmark](https://github.com/dotnet/BenchmarkDotNet)
+    - [Serilog](https://github.com/serilog/serilog)
+    - [AutoFixture](https://github.com/AutoFixture/AutoFixture)
+    - [Scrutor](https://github.com/khellang/Scrutor)
+    - [MediatR](https://github.com/jbogard/MediatR/wiki)
+    - [FluentValidation](https://github.com/FluentValidation/FluentValidation)
+    - [RestSharp](https://github.com/restsharp/RestSharp) / [Refit](https://github.com/reactiveui/refit)
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)

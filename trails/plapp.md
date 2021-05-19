@@ -94,6 +94,18 @@ Stuff that needs to be done:
   - [ ] Depending on data type
 - Make sure the dataseries is updated when the points are added
 
+## Targeting Windows in Test projects
+
+I can't really explain why, but it's neccessary to add `-windows` to the target framework for test projects (Ref: Error NETSDK1136).
+
+```xml
+<TargetFramework>net5.0-windows</TargetFramework>
+```
+
+## Adding AutoMapper
+
+Having gone back and forth with the data mapping functions over the course of this project, I've finally decided to try AutoMapper. Starting [here](https://docs.automapper.org/en/stable/Getting-started.html).
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
@@ -121,10 +133,14 @@ Stuff that needs to be done:
 
 - Tests for the ViewModels
   - Prerequisites: Figure out the business logic
+- Test infrastructure
+  - Navigation
+  - ViewFactory
 
 - Use `GetRequiredService` instead of `GetService` on the `ServiceProvider`
 
 - Refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
+  - Add whole Connection String to config (not just the filename)
 
 ### Bugs
 
@@ -144,3 +160,7 @@ Stuff that needs to be done:
 
 - Add static properties to a data series, and time stamps for when they change
   - E.g. A plant is standing in a windown along the north wall. Time passes, data is gathered. The plant is moved to a window on the south side. When looking at the time series, it will be observable where the plant was.
+
+### Low Priority
+
+- Tidy Construction Extensions
