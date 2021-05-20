@@ -113,8 +113,10 @@ title: Breadcrumbs
   - [SEO Tags](https://blog.webjeda.com/optimize-jekyll-seo/)
   - Add dynamic content
 
-- Patterns
+- Craft
   - [Gang of Four](https://github.com/wesdoyle/design-patterns-explained-with-food)
+  - [Head First Design Patterns](https://www.amazon.co.uk/Head-First-Design-Patterns-Freeman/dp/0596007124?tag=nickchapsas-21&geniuslink=true)
+  - [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 
 - C\#
   - [async/await best bractices](https://channel9.msdn.com/Shows/On-NET/Brandon-Minnick-asyncawait-best-practices)
@@ -130,6 +132,16 @@ title: Breadcrumbs
     - [MediatR](https://github.com/jbogard/MediatR/wiki)
     - [FluentValidation](https://github.com/FluentValidation/FluentValidation)
     - [RestSharp](https://github.com/restsharp/RestSharp) / [Refit](https://github.com/reactiveui/refit)
+    - [Source Generators](https://github.com/dotnet/roslyn-sdk/tree/main/samples/CSharp/SourceGenerators)
+  - Technologies
+    - [Terraform](https://github.com/hashicorp/terraform)
+    - [Orleans](https://dotnet.github.io/orleans/)
+    - [Elasticsearch](https://github.com/elastic/elasticsearch)
+    - Azure
+      - [Service Bus](https://azure.microsoft.com/en-us/services/service-bus/)
+      - [Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/)
+      - [Event Hub](https://azure.microsoft.com/en-us/services/event-hubs/)
+      - [Functions](https://azure.microsoft.com/en-us/services/functions/)
 
 - Security
   - [Permission-Based Authorization](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core/)

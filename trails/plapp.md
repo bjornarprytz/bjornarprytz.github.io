@@ -117,6 +117,34 @@ new Fixture()
 
 As a training exercise, I thought I'd add some animation on the LoadingPage. It was very easy to follow [this article](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/animation/simple).
 
+Next up, I'll take a crack at [Lottie](https://github.com/Baseflow/LottieXamarin). At first glance, it looks a bit proprietary (and sort of too good to be true), but heres to hoping!
+
+Lottie works like a charm so far! Steps to add an animation to the project
+
+1. Download one that you like from [lottiefiles](https://lottiefiles.com/) (in `JSON` format)
+2. Drag&Drop the `JSON` into the (`"Assets/Animations"` or `"Resources/Animations"`) folders and make sure the build action is correct (`"AndroidAsset"` or `"BundleResource"`).
+3. Reference it in the ViewModel:
+
+```csharp
+public string Animation { get; private set; }
+
+public LoadingViewModel()
+{
+    
+    Animation = Path.Combine("Animations","Pineapple.json");
+}
+```
+
+4. Bind it in the view:
+
+```csharp
+new AnimationView
+{
+    AutoPlay = true,
+    RepeatMode = RepeatMode.Infinite
+}.Bind(AnimationView.AnimationProperty, nameof(VM.Animation));
+```
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
@@ -166,6 +194,10 @@ As a training exercise, I thought I'd add some animation on the LoadingPage. It 
   - > Microsoft.EntityFrameworkCore.DbUpdateException: 'An error occurred while updating the entries. See the inner exception for details.'
     - Note: There was no inner exception to be accessed
   - I may be able to unconver this in the test project
+- Exception thrown when starting the App (first time since adding AutoMapper)
+  - >**System.MissingMethodException:** 'Default constructor not found for type Plapp.ViewModels.TopicViewModel'
+  - It's most likely either some bad/missing configuration in AutoMapper
+  - Less likely, but it could be the restructuring around the ViewFactory.
 
 - Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
 
