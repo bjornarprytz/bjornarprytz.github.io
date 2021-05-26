@@ -145,6 +145,24 @@ new AnimationView
 }.Bind(AnimationView.AnimationProperty, nameof(VM.Animation));
 ```
 
+## Binding nested view models
+
+```csharp
+new Slider())
+.Bind(nameof(VM.Current) + '.' + nameof(VM.Current.Value))
+```
+
+I wonder if there's a way to write an extension method in order to express the same thing with something like:
+
+```csharp
+new Slider()
+.Bind(RelativePath(VM.Current.Value))
+```
+
+## Sketching the UI
+
+First, [some](https://github.com/jsuarezruiz/xamarin-forms-goodlooking-UI) [inspiration](https://snppts.dev/).
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
@@ -157,6 +175,8 @@ new AnimationView
 - Add a mechanism where 'new' DataPoints are created in the context of their data series (i.e. with data type + id filled in)
 
 - Create graceful animation handling in `BasePage.OnAppearing` and `OnDisappearing`
+
+- Model Validation to avoid the user submitting bad data
 
 - Sketch UI Layout
 
@@ -178,6 +198,9 @@ new AnimationView
   - Navigation
   - ViewFactory
 
+- Add [Transition Animations](https://xamgirl.com/animating-page-transitions-in-xamarin-forms/)
+  - [Shared Transitions](https://github.com/GiampaoloGabba/Xamarin.Plugin.SharedTransitions)
+
 - Use `GetRequiredService` instead of `GetService` on the `ServiceProvider`
 
 - Refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
@@ -194,10 +217,10 @@ new AnimationView
   - > Microsoft.EntityFrameworkCore.DbUpdateException: 'An error occurred while updating the entries. See the inner exception for details.'
     - Note: There was no inner exception to be accessed
   - I may be able to unconver this in the test project
-- Exception thrown when starting the App (first time since adding AutoMapper)
-  - >**System.MissingMethodException:** 'Default constructor not found for type Plapp.ViewModels.TopicViewModel'
-  - It's most likely either some bad/missing configuration in AutoMapper
-  - Less likely, but it could be the restructuring around the ViewFactory.
+- App crash when calling `GoBackAsync()` after having opened a popup (e.g. `AddTag()`).
+  - >[libc] Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7ffc3fef90 in tid 19401 (mpanyname.plapp), pid 19401 (mpanyname.plapp)
+- Expander does not give more Vertical space after it's been expanded:
+  - Example: `TopicPage.descriptionExpander`
 
 - Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
 
