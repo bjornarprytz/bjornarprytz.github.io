@@ -78,3 +78,4 @@ The stack in magic facilitates counter-actions which means that agents could tak
 
 - Other reading: 
   - ([medium article](https://medium.com/@vedantchaudhari/goal-oriented-action-planning-34035ed40d0b) not read yet)
+  - [ReGoap](https://github.com/luxkun/ReGoap)
