@@ -148,7 +148,7 @@ new AnimationView
 ## Binding nested view models
 
 ```csharp
-new Slider())
+new Slider()
 .Bind(nameof(VM.Current) + '.' + nameof(VM.Current.Value))
 ```
 
@@ -205,6 +205,22 @@ First, [some](https://github.com/jsuarezruiz/xamarin-forms-goodlooking-UI) [insp
 
 - Refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
   - Add whole Connection String to config (not just the filename)
+
+### Inner Exceptions
+
+Remember to Break on all exceptions when debugging!!
+
+### Create a data mapping layer
+
+Goal: ViewModels should not have to depend on the DomainObjects directly, or at least not to have to call mapping functions explicitly.
+
+Maybe it can be solved with a middleware around the data services, so the VMs will always be served with VMs, which they can use to hydrate themselves. It may be a good idea to prevent AutoMapper from instantiating any objects itself, and only be allowed to hydrate existing ones.
+
+Right now, bugs are constantly popping up around the state of Models and their relations. Either new objects are created by AutoMapper, and EntityFramework is confused, or they're being hydrated incompletely, and some model constraint is broken. Circular references have even [caused stack overflow](https://stackoverflow.com/questions/11505128/circular-reference-causing-stack-overflow-with-automapper).
+
+It could also be a good idea to relax the constraints on the Database tables. It should be possible to have "half finished" objects, but they should have limited features until they're filled out.
+
+I think maybe MediatR could be a good fit. [This video](https://www.youtube.com/watch?v=xKKVW94F2bc) has a good explanation on how to separate out business logic (ViewModels only holding state), and put middleware around it. It seems like a perfect fit, seeing as I don't have much business logic yet, and I'm looking for somewhere to put middleware. It could help a lot with logging and exception handling.
 
 ### Bugs
 
