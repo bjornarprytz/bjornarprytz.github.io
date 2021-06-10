@@ -105,3 +105,4 @@ Added some placeholder commands, that I can implement later.
 - Arduino
   - Hook up sensors
   - Return JSON: [JSON server](https://arduinojson.org/v6/example/http-server/)
+  - [Static IP](https://techtutorialsx.com/2020/04/21/esp32-arduino-set-static-ip-address/) (for easier client configuration)
