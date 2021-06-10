@@ -73,6 +73,14 @@ It turns out it's not necessary to *join* a channel with the bot. I just had to 
 
 Finished the [event handler guide](https://discordjs.guide/event-handling/#event-handling). Now, adding events is easy as pie!
 
+### HttpClient
+
+Using [needle](https://www.npmjs.com/package/needle) for http requests, so far so good.
+
+### Arduino JSON server
+
+Arduino can now respond with simple text, but next up is sending actual JSON, then to hook up the sensors
+
 ### Commands
 
 Added some placeholder commands, that I can implement later.
@@ -96,4 +104,4 @@ Added some placeholder commands, that I can implement later.
     - alert (on sensor levels)
 - Arduino
   - Hook up sensors
-  - [JSON server](https://arduinojson.org/v6/example/http-server/)
+  - Return JSON: [JSON server](https://arduinojson.org/v6/example/http-server/)
