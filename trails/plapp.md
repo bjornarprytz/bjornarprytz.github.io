@@ -145,6 +145,24 @@ new AnimationView
 }.Bind(AnimationView.AnimationProperty, nameof(VM.Animation));
 ```
 
+## Binding nested view models
+
+```csharp
+new Slider()
+.Bind(nameof(VM.Current) + '.' + nameof(VM.Current.Value))
+```
+
+I wonder if there's a way to write an extension method in order to express the same thing with something like:
+
+```csharp
+new Slider()
+.Bind(RelativePath(VM.Current.Value))
+```
+
+## Sketching the UI
+
+First, [some](https://github.com/jsuarezruiz/xamarin-forms-goodlooking-UI) [inspiration](https://snppts.dev/).
+
 ## Todo
 
 - Look into EFCore [database migrations](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli). Do I need it?
@@ -157,6 +175,8 @@ new AnimationView
 - Add a mechanism where 'new' DataPoints are created in the context of their data series (i.e. with data type + id filled in)
 
 - Create graceful animation handling in `BasePage.OnAppearing` and `OnDisappearing`
+
+- Model Validation to avoid the user submitting bad data
 
 - Sketch UI Layout
 
@@ -178,10 +198,29 @@ new AnimationView
   - Navigation
   - ViewFactory
 
+- Add [Transition Animations](https://xamgirl.com/animating-page-transitions-in-xamarin-forms/)
+  - [Shared Transitions](https://github.com/GiampaoloGabba/Xamarin.Plugin.SharedTransitions)
+
 - Use `GetRequiredService` instead of `GetService` on the `ServiceProvider`
 
 - Refactor [Config](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/)
   - Add whole Connection String to config (not just the filename)
+
+### Inner Exceptions
+
+Remember to Break on all exceptions when debugging!!
+
+### Create a data mapping layer
+
+Goal: ViewModels should not have to depend on the DomainObjects directly, or at least not to have to call mapping functions explicitly.
+
+Maybe it can be solved with a middleware around the data services, so the VMs will always be served with VMs, which they can use to hydrate themselves. It may be a good idea to prevent AutoMapper from instantiating any objects itself, and only be allowed to hydrate existing ones.
+
+Right now, bugs are constantly popping up around the state of Models and their relations. Either new objects are created by AutoMapper, and EntityFramework is confused, or they're being hydrated incompletely, and some model constraint is broken. Circular references have even [caused stack overflow](https://stackoverflow.com/questions/11505128/circular-reference-causing-stack-overflow-with-automapper).
+
+It could also be a good idea to relax the constraints on the Database tables. It should be possible to have "half finished" objects, but they should have limited features until they're filled out.
+
+I think maybe MediatR could be a good fit. [This video](https://www.youtube.com/watch?v=xKKVW94F2bc) has a good explanation on how to separate out business logic (ViewModels only holding state), and put middleware around it. It seems like a perfect fit, seeing as I don't have much business logic yet, and I'm looking for somewhere to put middleware. It could help a lot with logging and exception handling.
 
 ### Bugs
 
@@ -194,10 +233,10 @@ new AnimationView
   - > Microsoft.EntityFrameworkCore.DbUpdateException: 'An error occurred while updating the entries. See the inner exception for details.'
     - Note: There was no inner exception to be accessed
   - I may be able to unconver this in the test project
-- Exception thrown when starting the App (first time since adding AutoMapper)
-  - >**System.MissingMethodException:** 'Default constructor not found for type Plapp.ViewModels.TopicViewModel'
-  - It's most likely either some bad/missing configuration in AutoMapper
-  - Less likely, but it could be the restructuring around the ViewFactory.
+- App crash when calling `GoBackAsync()` after having opened a popup (e.g. `AddTag()`).
+  - >[libc] Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7ffc3fef90 in tid 19401 (mpanyname.plapp), pid 19401 (mpanyname.plapp)
+- Expander does not give more Vertical space after it's been expanded:
+  - Example: `TopicPage.descriptionExpander`
 
 - Investigate if event subscription ([example](https://github.com/bjornarprytz/Plapp/blob/master/Plapp.ViewModels/ViewModels/BaseTaskViewModel.cs)) can cause a memory leak.
 
